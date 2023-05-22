@@ -23,6 +23,7 @@ form.addEventListener('submit', function(event) {
 });
 
 confirmPasswordInput.addEventListener('input', validatePassword);
+emailInput.addEventListener('input', validateEmail);
 
 function validatePassword() {
   const passwordValue = passwordInput.value;
