@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+
     <script src="./js/cp3.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
     <title>OMCORP-CP3</title>
+
 </head>
+
 <body>
-    <form action="">
-        <fieldset>
-            <legend>Criar conta</legend>
-            <div class="form-cadastro">
+    <div class="dark-mode-btn">
+        <button type="button" onclick="">Modo Escuro</button>
+    </div>
+
+    <div class="form-cadastro">
+        <form action="">
+            <fieldset>
+                <legend>Criar conta</legend>
+    
                 <div class="cadastro-nome">
                     <label for="inputFirstName">Primeiro nome*
                         <input id="inputFirstName" name="firstName" type="text">
                     </label>
-                    
+                        
                     <label for="inputLastName">Segundo nome*
                         <input id="inputLastName" name="lastName" type="text">
                     </label>
                 </div>
-
+    
                 <div class="cadastro-email">
                     <label for="inputEmail">E-mail*
                         <input id="inputEmail" name="email" type="text">
                     </label>
                 </div>
-
+    
                 <div class="cadastro-senha">
                     <label for="inputSenha">Senha*
                         <input id="inputSenha" name="password" type="password">
                     </label>
-
+    
                     <label for="inputConfirmarSenha">Confirmar senha*
                         <input id="inputConfirmarSenha" type="password">
                     </label>
                 </div>
-            </div>
-        </fieldset>
-    </form>
+    
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
 </body>
+
 </html>
