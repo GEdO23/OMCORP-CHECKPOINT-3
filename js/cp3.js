@@ -22,6 +22,7 @@ form.addEventListener('submit', function(event) {
   }
 });
 
+
 confirmPasswordInput.addEventListener('input', validatePassword);
 emailInput.addEventListener('input', validateEmail);
 
