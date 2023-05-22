@@ -22,6 +22,8 @@ form.addEventListener('submit', function(event) {
   }
 });
 
+confirmPasswordInput.addEventListener('input', validatePassword);
+
 function validatePassword() {
   const passwordValue = passwordInput.value;
   const confirmPasswordValue = confirmPasswordInput.value;
