@@ -13,6 +13,11 @@
 - A estilização é obrigatória e a cargo da equipe.
 - Adicionar no arquivo de integrantes a URL do repositório e do Gitpages.(***OBRIGATÓRIO***)
 
+## INTEGRANTES
+- RM: 99632 - Gabriel Eringer de Oliveira (GEdO23)
+- RM: 551616 - Yago Marques de Souza Farah (YagoFarah)
+- RM: 551428 - Eduardo Tatsuo Felix Higa (tatsuoyohji)
+
 ## QUESTÕES
 1. **No arquivo index.htmldeve ser criado umformulário de cadastro contendo os seguintes campos para serem validados:**
 ``(8 Pts)``
