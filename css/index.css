@@ -64,5 +64,17 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #4caf50;
+}
+
+.error {
+  border-color: #ff0000;
+}
+
+:root {
+  --correto: 1px solid #32a01c;
+  --errado: 1px solid #a01c1c;
+  --correto-transparente: #32a01c57;
+  --errado-transparente: #a01c1c57;
+  --default-input-border: 1px solid #cccccc;
 }
