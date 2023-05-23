@@ -108,69 +108,13 @@ form.addEventListener('submit', (event) => {
 });
 
 
-// const darkModeToggle = document.querySelector('.dark-mode-btn button');
-// const body = document.body;
+const darkModeToggle = document.querySelector('.dark-mode-btn button');
+const body = document.body;
 
-// darkModeToggle.addEventListener('click', toggleDarkMode);
 
-// function toggleDarkMode() {
-//   body.classList.toggle('dark-mode');
-// }
+darkModeToggle.addEventListener('click', toggleDarkMode);
 
-// const form = document.querySelector('form');
-// const inputPrimeiroNome = document.querySelector('#inputFirstName');
-// const inputSegundoNome = document.querySelector('#inputLastName');
-
-// form.addEventListener('submit', function(event) {
-//   if (inputPrimeiroNome.value === '') {
-//     event.preventDefault();
-//     alert('Por favor, preencha o primeiro nome.');
-
-//   }else if(inputSegundoNome.value === '') {
-//     event.preventDefault();
-//     alert('Por favor, preencha o segundo nome.');
-//   }
-// });
-
-// const passwordInput = document.getElementById('inputSenha');
-// const confirmPasswordInput = document.getElementById('inputConfirmarSenha');
-// const emailInput = document.getElementById('inputEmail');
-
-// emailInput.addEventListener('input', validateEmail);
-
-// function validateEmail() {
-//   const emailValue = emailInput.value;
-//   const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
-
-//   if (!emailRegex.test(emailValue)) {
-//     emailInput.classList.add('error'); // Adiciona a classe "error"
-//   } else {
-//     emailInput.classList.remove('error'); // Remove a classe "error" se estiver presente
-//   }
-// }
-
-// form.addEventListener('submit', function(event) {
-//   if (!validatePassword()) {
-//     event.preventDefault();
-//   }
-
-//   if (!validateEmail()) {
-//     event.preventDefault();
-//   }
-// });
-
-// confirmPasswordInput.addEventListener('input', validatePassword);
-
-// function validatePassword() {
-//   const passwordValue = passwordInput.value;
-//   const confirmPasswordValue = confirmPasswordInput.value;
-  
-//   if (passwordValue !== confirmPasswordValue) {
-//     confirmPasswordInput.setCustomValidity('As senhas não são iguais.');
-//     return false;
-//   } else {
-//     confirmPasswordInput.setCustomValidity('');
-//     return true;
-//   }
-// }
+function toggleDarkMode() {
+  body.classList.toggle('dark-mode');
+}
 
