@@ -9,20 +9,22 @@ const idInputSenhaConfirmada = document.querySelector('#inputConfirmarSenha');
 
 function isMinSizeValid(target, minCaract){
   if(target.value.trim === '' || target.value.length < minCaract) {
+    target.setCustomValidity(`Este campo deve ter no minimo ${minCaract} caracteres`)
     return false;
   } else {
+    target.setCustomValidity('')
     return true;
   }
 }
 
 function isMaxSizeValid(target, maxCaract) {
   if(target.value === '' || target.value.length > maxCaract) {
+    target.setCustomValidity(`Este campo deve ter no maximo ${maxCaract} caracteres`)
     return false;
   } else {
     return true;
   }
 }
-
 
 function validate(target, condition) {
   if(condition) {
@@ -34,16 +36,20 @@ function validate(target, condition) {
 
 function hasRegex(target, regex) {
   if(regex.test(target.value)) {
+    target.setCustomValidity('');
     return true;
   } else {
+    target.setCustomValidity('Este não é um e-mail valido');
     return false;
   }
 }
 
 function isEqualTo(x, y) {
   if(x.value === y.value) {
+    y.setCustomValidity('');
     return true;
   } else {
+    y.setCustomValidity('As senhas não são iguais.');
     return false;
   }
 }
@@ -95,7 +101,11 @@ idInputSenhaConfirmada.addEventListener('input', ()=>{
   validate(idInputSenhaConfirmada, isConfirmedPasswordValid());
 })
 
-
+form.addEventListener('submit', (event)=>{
+  if(isFirstNameValid() && isLastNameValid() && isEmailValid() && isPasswordValid() && isConfirmedPasswordValid()) {
+  } else {
+  }
+})
 
 
 
