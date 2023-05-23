@@ -8,7 +8,7 @@ const idInputSenha = document.querySelector('#inputSenha');
 const idInputSenhaConfirmada = document.querySelector('#inputConfirmarSenha');
 
 function isMinSizeValid(target, minCaract){
-  if(target.value.trim === '' || target.value.length < minCaract) {
+  if(target.value.trim() === '' || target.value.length < minCaract) {
     target.setCustomValidity(`Este campo deve ter no minimo ${minCaract} caracteres`)
     return false;
   } else {
@@ -101,14 +101,11 @@ idInputSenhaConfirmada.addEventListener('input', ()=>{
   validate(idInputSenhaConfirmada, isConfirmedPasswordValid());
 })
 
-form.addEventListener('submit', (event)=>{
-  if(isFirstNameValid() && isLastNameValid() && isEmailValid() && isPasswordValid() && isConfirmedPasswordValid()) {
-  } else {
+form.addEventListener('submit', (event) => {
+  if (!isFirstNameValid() || !isLastNameValid() || !isEmailValid() || !isPasswordValid() || !isConfirmedPasswordValid()) {
+    event.preventDefault();
   }
-})
-
-
-
+});
 
 
 // const darkModeToggle = document.querySelector('.dark-mode-btn button');
